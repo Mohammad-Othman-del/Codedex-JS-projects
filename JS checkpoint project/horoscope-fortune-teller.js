@@ -170,8 +170,8 @@ if (sign != "") {
     console.log(`Your sign is ${sign}`);
     console.log(`Your symbol is ${symbol}`);
     console.log(`Your fortune is:`)
-    for (let i = 0; i < 5; i++) {
-        let randomFortune = Math.floor(Math.random() * 100);
-        console.log(`${i}- ${randomFortune}`);
+    for (let i = 1; i < 6; i++) {
+        let randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+        console.log(`${i++}- ${randomFortune}`);
     }
 }
